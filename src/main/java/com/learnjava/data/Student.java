@@ -1,4 +1,5 @@
 package com.learnjava.data;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +19,14 @@ public class Student {
         this.noteBooks = noteBooks;
     }
 
+    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities, int noteBooks) {
+        this.name = name;
+        this.gradeLevel = gradeLevel;
+        this.gpa = gpa;
+        this.gender = gender;
+        this.activities = activities;
+        this.noteBooks = noteBooks;
+    }
 
     public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
         this.name = name;
@@ -27,7 +36,9 @@ public class Student {
         this.activities = activities;
     }
 
-    public Student (){}
+    public Student() {
+
+    }
 
     public Student(String s) {
         this.name=s;
@@ -69,6 +80,7 @@ public class Student {
         System.out.println(this.activities);
     }
 
+
     public List<String> getActivities() {
         return activities;
     }
@@ -90,4 +102,3 @@ public class Student {
 
 
 }
-
